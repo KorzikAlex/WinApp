@@ -1,0 +1,6 @@
+flask
+flask-wtf
+sqlalchemy
+SQLAlchemy-serializer
+flask-restful
+alembic
