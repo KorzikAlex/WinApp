@@ -1,0 +1,37 @@
+{
+  "Ubuntu": {
+    "description": "Дистрибутив GNU/Linux, основанный на Debian GNU/Linux.",
+    "company": "Canonical",
+    "page_company": "https://canonical.com",
+    "link": "https://releases.ubuntu.com/20.04.4/ubuntu-20.04.4-desktop-amd64.iso",
+    "icon": "static/icons/ubuntu.png"
+  },
+  "OBSStudio": {
+    "description": "Свободная программа с открытым исходным кодом для записи видео и потокового вещания.",
+    "company": "",
+    "page_company": "https://obsproject.com/",
+    "link": "https://obsproject.com/",
+    "icon": "static/icons/obsstudio.png"
+  },
+  "Kdenlive": {
+    "description": "Нелинейный видеоредактор с открытым исходным кодом на основе Framework MLT и KDE.",
+    "company": "KDE",
+    "page_company": "https://kde.org/",
+    "link": "https://download.kde.org/stable/kdenlive/21.12/windows/kdenlive-21.12.3.exe",
+    "icon": "static/icons/kdenlive.png"
+  },
+  "Blender": {
+    "description": "Профессиональное свободное и открытое программное обеспечение для создания трёхмерной компьютерной графики.",
+    "company": "Blender",
+    "page_company": "https://blender.org/",
+    "link": "https://mirrors.dotsrc.org/blender/release/Blender3.1/blender-3.1.2-windows-x64.msi",
+    "icon": "static/icons/blender.png"
+  },
+  "7-zip": {
+    "description": "Свободный файловый архиватор с высокой степенью сжатия данных.",
+    "company": "Igor Pavlov",
+    "page_company": "https://www.7-zip.org/",
+    "link": "https://www.7-zip.org/a/7z2107-x64.exe",
+    "icon": "static/icons/7-zip.png"
+  }
+}
