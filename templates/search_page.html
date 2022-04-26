@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h4>Вот что мы нашли по запросу: "{{ search }}"</h4>
+<h5>Найдено запросов: {{ count_search }}</h5>
+<div class="row row-cols-md-5">
+    {% for item in table['apps'] %}
+    <div class="col">
+        <div class="card w-175 border-dark h-100">
+            <img src="{{ item['icon'] }}" class="card-img-top" alt="{{ item['name'] }}" height="250px">
+            <div class="card-body">
+                <h5 class="card-title">{{ item['name'] }}</h5>
+                <p class="card-title">Издатель: {{ item['company'] }}</p>
+                <p class="card-title">Официальный сайт: <a href="{{ item['page_company'] }}">{{ item['page_company'] }}</a></p>
+                <p class="card-text">{{ item['description'] }}</p>
+                <a href="{{ item['url'] }}" class="btn btn-primary">Скачать</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
