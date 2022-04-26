@@ -50,16 +50,19 @@
         <span class="visually-hidden">Следующий</span>
     </button>
 </div>
-
-
-<div class="row">
+<p></p>
+<div class="row row-cols-md-5">
     {% for item in table['apps'] %}
-    <div class="card col-sm-6 " style="width: 24rem;">
-        <img src="{{ item['icon'] }}" class="card-img-top ratio ratio-1x1" alt="{{ item['name'] }}"  height="250px">
-        <div class="card-body">
-            <h5 class="card-title">{{ item['name'] }}</h5>
-            <p class="card-text">{{ item['description'] }}</p>
-            <a href="{{ item['url'] }}" class="btn btn-primary">Скачать</a>
+    <div class="col">
+        <div class="card w-175 border-dark h-100">
+            <img src="{{ item['icon'] }}" class="card-img-top" alt="{{ item['name'] }}" height="250px">
+            <div class="card-body">
+                <h5 class="card-title">{{ item['name'] }}</h5>
+                <p class="card-title">Издатель: {{ item['company'] }}</p>
+                <p class="card-title">Официальный сайт: <a href="{{ item['page_company'] }}">{{ item['page_company'] }}</a></p>
+                <p class="card-text">{{ item['description'] }}</p>
+                <a href="{{ item['url'] }}" class="btn btn-primary">Скачать</a>
+            </div>
         </div>
     </div>
     {% endfor %}
