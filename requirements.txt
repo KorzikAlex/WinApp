@@ -4,3 +4,4 @@ sqlalchemy
 SQLAlchemy-serializer
 flask-restful
 alembic
+flask-login
